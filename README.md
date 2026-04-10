@@ -1,5 +1,3 @@
-# Perfeito — vou te entregar uma versão **ideal para GitHub**, mais objetiva, bem formatada em Markdown e com cara de projeto profissional 👇
-
 ---
 
 # 🏥 Sistema de Triagem para UBS
