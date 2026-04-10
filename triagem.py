@@ -1,16 +1,19 @@
 import panel as pn
 import pandas as pd
 import psycopg2
+import os
+from dotenv import load_dotenv
+load_dotenv()
 from sqlalchemy import create_engine
 from sqlalchemy.exc import SQLAlchemyError
 
 pn.extension('tabulator', notifications=True)
 
-DB_USER = "postgres"
-DB_PASSWORD = "1307"
-DB_HOST = "localhost"
-DB_PORT = "5432"
-DB_NAME = "fbd-triagem-facilitada"
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT")
+DB_NAME = os.getenv("DB_NAME")
 
 DATABASE_URL = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 db_connection = psycopg2.connect(f"dbname='{DB_NAME}' user='{DB_USER}' host='{DB_HOST}' password='{DB_PASSWORD}'")
