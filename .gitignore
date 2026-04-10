@@ -1,0 +1,23 @@
+# Arquivos de ambiente (SENHAS)
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Ambiente virtual
+venv/
+.env/
+
+# VS Code
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Banco local (se usar SQLite)
+*.db
