@@ -90,14 +90,14 @@ DB_PORT = "5432"
 DB_NAME = "nome_do_banco"
 ```
 
-Execute o script SQL (`schema.sql`) para criar as tabelas.
+Execute o script SQL (`esquema.sql`) para criar as tabelas.
 
 ---
 
 ### 4. Execute a aplicação
 
 ```bash
-python app.py
+python triagem.py
 ```
 
 A aplicação será iniciada em:
